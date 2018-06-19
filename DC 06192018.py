@@ -14,15 +14,17 @@ def main():
     print(ListProduct([2,4,0]))
     print(ListProduct([2,4,0,9]))
     print(ListProduct([-2,4,6]))
+    print(ListProduct([-2,0,6,0]))
+    print(ListProduct([1,2,3]))
     print(ListProduct([]))
     print(ListProduct([2]))
 
 def ListProduct(li):
     #If length of li = 1 just return li.
-    #From left to right and vice verca,
-    #calculate the product from 1 -> end and len() - 2 (2nd last indice) to 0
-    #L -> R, first product is 1 and R -> first product is 1
-    #and multiply products together to get the product matrix
+    #From left to right and vice versa,
+    #Initialize prodsum array to all 1's
+    #L -> R, temp[0] = 1 and R -> temp[n-1] = 1 otherwise
+    #prodsum[i] = li[i] * left/right[i-1]
     #Time complexity: O(n) -> traversing the list once
     #Space complexity: O(1) -> Only used a defined length array (prodlist)
 
