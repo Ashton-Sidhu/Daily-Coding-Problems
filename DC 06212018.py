@@ -39,7 +39,8 @@ def main():
     assert FindSmallest([5]) == 1
     assert FindSmallest([]) == 1
     assert FindSmallest([1,-4]) == 2
-
+    assert FindSmallest([3, 4, -1, 1]) == 2
+    assert FindSmallest([1, 2, 0]) == 3
 
 if __name__ == '__main__':
     main()
