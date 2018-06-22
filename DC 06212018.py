@@ -20,11 +20,11 @@ def FindSmallest(li):
     for ind,item in enumerate(li):       
 
         while ind + 1 != li[ind] and 0 < li[ind] <= len(li):
-            v = li[ind]      
-            li[ind], li[v-1] = li[v-1], li[ind]
-            li[v-1] = v
+            tmp = li[ind]      
+            li[ind], li[tmp-1] = li[tmp-1], li[ind]
+            li[tmp-1] = tmp
     
-            if li[ind] == li[v-1]:
+            if li[ind] == li[tmp-1]:
                 break
 
     for ind,item in enumerate(li):
