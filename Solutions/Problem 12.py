@@ -15,6 +15,9 @@
 #Calculate the number of unique ways to reach Nth step per possible step using the relationship NumWays(N) = N-X1 + .. + N-Xm
 #where m is the number of different unique possible steps you can take.
 
+#Time Complexity: O(N * X)
+#Space Complexity: O(N)
+
 def CountNSteps(N, X):
 
     if N is 0: return 1
