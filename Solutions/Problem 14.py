@@ -11,14 +11,6 @@
 import math
 import random
 
-def EstimatePi(x, y):
-
-    r_sq = x ** 2 + y ** 2
-    r = math.sqrt(r_sq)
-    numerator = (2*r) ** 2
-
-    return numerator / r_sq
-
 def main():
     N = 1000000
     inside = 0
